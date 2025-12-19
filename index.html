@@ -1,91 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-<title>My Website</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
- <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Sunrise Lodge</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <span class="logo"><h1>My Website</h1></span>
-                <span class="hamburger" onclick="toggleMenu()">☰</span>
-                <ul class="nav-links" id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
+        <header class="header">
+            <h1 class="logo">SUNRISE LODGE</h1>
+            <div class="hamburger" id="hamburger">☰</div>            
+            <nav class="nav" id="nav">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </header>
         <section class="hero">
-                    <h2>I Build Morden Websites</h2>
-                    <p>Simple, fast and mobile-friendly websites for businesses.</p>
-                </section>
-        <section class="hero">
-            <h2>Welcome to My Website</h2>
-            <p>This is a simple modern homepage.</p>
-        </section>
-        <section class="services">
-            <h2>My Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <h3>Web Design</h3>
-                    <p>Morden, responsive website design that look great on all devices.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>Fast, clean code using HTML, CSS, and Javascript.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Website Updates</h3>
-                    <p>Fixes, redesigns, and content updates for existing websites</p>
-                </div>
+            <div class="hero-content">
+            <h2>Welcome to Sunrise Lodge</h2>
+            <p>Located in the heart of the city, Comfortable stays for every traveler</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d202.11758763456322!2d26.486716!3d-17.0194564!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2szm!4v1766135917785!5m2!1sen!2szm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" 
+                height="350" 
+                style="border: 0;" allowfullscreen=""
+                loading="lazy">
+            </iframe>
+            <p style="text-align: center; margin-top: 10px;">Sample location (Kalomo, Zambia)-actual business location will be added.</p>
             </div>
         </section>
-        <section class="contact">
-            <h2>Contact Me</h2>
-             <p>Let's Work Together On Your Project.</p>
-            <p>Email: <a href="mailto:mudendaedwin78@gmail.com">mudendaedwin78@gmail.com</a></p>
-            <p>WhatsApp: <a href="https://wa.me/260771137824">Chat on WhatsApp</a></p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required> 
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-        <section class="cards">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>I Create Modern And Clean Websites.</p>
-                <a class="btn" href="#">Learn More</a>
-            </div>
-            <div class="card">
-                <h3>About Us</h3>
-                <p>Know More About Us To Increase Your Confidence</p>
-                <a class="btn" href="about.html">About</a>
-            </div>
-        </section>
-        <script>
-            const hamburger = document.getElementById("hamburger");
-            const navLinks = document.getElementById("navLinks");
-            hamburger.addEventListener("click", () => {
-                alert("Hamburger clicked");
-                navLinks.classList.toggle("active");
-            });
-        </script>
-        <script>
-            function toggleMenu() {
-                document.getElementById("navLinks").classList.toggle("active");
-            }
-        </script>
-        <footer class="footer">
-            <p>&copy; 2025 EDWIN MUDENDA | WEB DEVELOPER</p>
-             <p>ALL RIGHTS RESERVED</p>
+        <footer>
+            <p>&copy; 2025 Sunrise Lodge. All Rights Reserved.</p>
         </footer>
+        <a href="https://wa.me/260771137824" class="whatsapp-btn" target="_blank">Chat on whatsapp</a>
+        <script src="script.js"></script>
     </body>
 </html>
